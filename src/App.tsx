@@ -4,10 +4,10 @@ import './App.css';
 
 function App() {
 
-  const [number, setNumber] = useState(5)
+  const [number, setNumber] = useState<number | string >(5) //override the number type with the <> "number or string"
 
   const changeNumber = () => {
-    setNumber(10)
+    setNumber('10')
   }
 
   return (
